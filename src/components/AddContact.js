@@ -17,8 +17,9 @@ class AddContact extends React.Component {
 
         this.props.addContactHandler(this.state);
         //why this the following line not cause the console log to show empty strings for name and email
+        // use this clear the name and email
         this.setState({name:"", email: ""});
-        // console.log(this.state);
+        this.props.history.push("/");
 
     }
 
